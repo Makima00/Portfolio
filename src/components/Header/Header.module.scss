@@ -1,0 +1,56 @@
+@import '../../styles/contants.scss';
+
+.wrapper{
+
+    position: relative;
+    z-index: 99;
+    opacity: 1;
+    transform: none;
+    position: sticky;
+    top:0;
+    transition: all 300ms ease;
+
+    .container{
+        position: relative;
+        justify-content: space-between;
+        font-weight: 500;
+    }
+
+    .name{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .menu{
+        text-transform: uppercase;
+        font-size: 1rem;
+        list-style: none;
+        gap: 1.5rem;
+        cursor: pointer;
+
+        li{
+            a{
+                color: inherit;
+                text-decoration: none;
+            }
+            
+            a:hover{
+                color: $secondary;
+            }
+        }
+
+        .phone{
+            gap: 1.2rem;
+            flex-wrap: wrap;
+
+            svg{
+                color: $secondary;
+                padding: 10px;
+                background: white;
+                border-radius: 999px;
+                box-shadow: 0 4px 4px rgba(0,0,0,0.05);
+            }
+        }
+    }
+
+}
