@@ -18,7 +18,7 @@ const Footer = () => {
 
                 <div className={css.left}>
                     <span className="primaryText">
-                        Let's make something <br />amazing together together
+                        Let's make something <br />amazing together
                     </span>
                     <span className="primaryText">
                         Starting by <a href="mailto:makimam@gmail.com">saying hi</a>
