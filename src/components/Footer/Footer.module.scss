@@ -1,0 +1,65 @@
+@import '../../styles/contants.scss';
+
+.wrapper {
+    background-color: white;
+
+    .container {
+        gap: 2rem;
+
+        @media (max-width: $sm) {
+            flex-direction: column;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+
+        .left {
+            flex: 3;
+
+            >* {
+                display: block;
+            }
+
+            >:nth-child(2) {
+                margin-top: 3rem;
+
+                a {
+                    color: orange;
+                }
+            }
+        }
+
+        .right {
+            flex: 1;
+            align-items: flex-start;
+
+            .info {
+                margin-bottom: 1rem;
+
+                >* {
+                    display: block;
+                }
+            }
+
+            .menu {
+                @media (max-width:$sm) {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                gap: 1rem;
+
+                li {
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+}
