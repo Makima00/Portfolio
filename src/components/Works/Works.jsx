@@ -45,6 +45,7 @@ const Works = () => {
                         className={css.progressBar}>
                         <motion.div
                             variants={fadeIn("down", "tween", 2, 1.5)}
+
                             className={css.line}></motion.div>
                         <div><div className={css.circle} style={{ background: "#000" }}></div></div>
                         <div><div className={css.circle} style={{ background: "red" }}></div></div>
