@@ -2,16 +2,30 @@
 
 .wrapper {
     overflow: hidden;
+    height: calc(100vh - 104px);
+
+    @media (max-width:$sm) {
+        height: calc(100vh - 81px);
+    }
 
     .container {
         position: relative;
         z-index: 1;
+        height: 100%;
+
+        @media (max-width:$sm) {
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            // text-align: center;
+            gap: 2rem;
+        }
 
         .upperElements {
             @media (max-width:$sm) {
                 justify-content: center;
                 text-align: center;
-                gap: 2rem;
+                gap: 1rem;
             }
 
             display: flex;
@@ -24,11 +38,13 @@
 
             @media (max-width:$sm),
             (max-width:$md) {
-                margin-top: 4rem;
+                margin-top: 1rem;
                 gap: 2rem;
                 justify-content: center;
             }
 
+            // position: absolute;
+            // bottom: 2%;
             margin-top: 12rem;
             display: flex;
             justify-content: space-between;
@@ -49,7 +65,7 @@
                 align-items: center;
 
                 img {
-                    margin-bottom: 1rem;
+                    margin-bottom: 0.5rem;
                     width: 3.5rem;
                 }
 
@@ -72,15 +88,17 @@
             position: absolute;
             bottom: -2rem;
             margin: auto;
-            background: url('../splash.png') no-repeat;
+            // background: url('../splash.png') no-repeat;
             background-size: 23rem;
             left: 33%;
 
             img {
                 @media (max-width: $sm) {
-                    width: 23rem;
+                    width: 100%;
                     // margin-bottom: -5px;
                 }
+
+                width: 30rem;
             }
         }
 

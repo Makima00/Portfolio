@@ -33,14 +33,14 @@ const Hero = () => {
                     className={css.person}>
                     <motion.img
                         variants={fadeIn("up", "tween", 0.5, 1.2)}
-                        src="./person.png" alt="Image de Mello" />
+                        src="./hero.png" alt="Image de Mello" />
                 </motion.div>
 
                 {/* email */}
                 <motion.a
                     variants={fadeIn("right", "tween", 0.5, 0.5)}
                     className={css.email} href="mailto:makimam492@gmail.com">
-                    makimam492@gmail.com
+                    fake@gmail.com
                 </motion.a>
 
                 {/* lower elements */}
